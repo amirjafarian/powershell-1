@@ -318,7 +318,7 @@ function New-RegistryKey
     Write-Log "Creating $RegistryKeyPath\$RegistryKeyName key..."
     try
     {
-        New-Item -Path $RegistryKeyPath -Name $RegistryKeyName -ErrorAction Stop  
+        New-Item -Path $RegistryKeyPath -Name $RegistryKeyName -ErrorAction Stop | Out-Null
     }
     catch
     {
@@ -374,7 +374,7 @@ if ( (Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\Installer' -Name 
     Write-Log "Creating HKLM:\SOFTWARE\Microsoft\Windows\Installer\DisableMSI as DWORD with value 0..."
     try
     {
-        New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\Installer' -Name 'DisableMSI' -PropertyType 'DWORD' -Value '0' -ErrorAction Stop  
+        New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\Installer' -Name 'DisableMSI' -PropertyType 'DWORD' -Value '0' -ErrorAction Stop | Out-Null
     }
     catch
     {
@@ -389,7 +389,7 @@ if ( ((Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\Installer' -Name
     Write-Log "Setting HKLM:\SOFTWARE\Microsoft\Windows\Installer\DisableMSI with value 0..."
     try
     {
-        Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\Installer' -Name 'DisableMSI' -Value '0' -ErrorAction Stop  
+        Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\Installer' -Name 'DisableMSI' -Value '0' -ErrorAction Stop | Out-Null
     }
     catch
     {
@@ -480,12 +480,12 @@ if ($IsFortiClientInstalled)
     }
     try
     {
-        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'DATA1' -PropertyType 'String' -Value $null -ErrorAction Stop
-        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'DATA2' -PropertyType 'String' -Value $null -ErrorAction Stop
-        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'DATA3' -PropertyType 'String' -Value $null -ErrorAction Stop
-        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'Description' -PropertyType 'String' -Value $null -ErrorAction Stop
-        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'Server' -PropertyType 'String' -Value 'sslvpn.prpimaging.com.au:443' -ErrorAction Stop
-        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'ServerCert' -PropertyType 'String' -Value '1' -ErrorAction Stop
+        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'DATA1' -PropertyType 'String' -Value $null -ErrorAction Stop | Out-Null
+        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'DATA2' -PropertyType 'String' -Value $null -ErrorAction Stop | Out-Null
+        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'DATA3' -PropertyType 'String' -Value $null -ErrorAction Stop | Out-Null
+        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'Description' -PropertyType 'String' -Value $null -ErrorAction Stop | Out-Null
+        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'Server' -PropertyType 'String' -Value 'sslvpn.prpimaging.com.au:443' -ErrorAction Stop | Out-Null
+        New-ItemProperty -Path 'HKCU:\Software\Fortinet\SslvpnClient\Tunnels\PRP Diagnostic Imaging' -Name 'ServerCert' -PropertyType 'String' -Value '1' -ErrorAction Stop | Out-Null
     }
     catch
     {
