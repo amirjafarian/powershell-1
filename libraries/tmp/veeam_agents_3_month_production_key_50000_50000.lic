@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Licenses><License><![CDATA[Agent for Linux (Server)=50000
+Agent for Linux (Workstation)=50000
+Company=Avante IT
+Description=Copyright 2018 Veeam, Inc. All Rights Reserved. The Software Product is protected by copyright and other intellectual property laws and treaties. Veeam or its suppliers own the title, copyright, and other intellectual property rights in the Software Product. Veeam reserves all rights not expressly granted to you in EULA. The Software Product is licensed, not sold. Veeam grants to you a nonexclusive nontransferable license to use the Software Product, provided that you agree with EULA.
+E-mail=developer@avante-group.com
+Expiration date=24/10/2018
+First name=Hendrik
+Last name=Avante
+License information=Licensed product:\tVeeam Agent for Linux\nLicense type:\tEvaluation License\nLicensed to:\tAvante IT\nContact person:\tHendrik Avante\nAgent for Linux (Server):\t50000\nAgent for Linux (Workstation):\t50000
+License type=Evaluation License
+Product=Veeam Agent for Linux
+Support expiration date=24/10/2018
+Version=2.x
+Signature=CDB65AA63BE01673B19C6556D8B7B477670535B9D3A753578573FC261C21C3670A6F52C961DCAB7828090FF3570DE2676E09847AEFBF8AF3D4376706A73B1CAD98E95DBFC4ED7BBE4D023E1B92B32CE36DAA2F67C43C53083129DE62021AD7D7B5A99192AFA270E5E29A5B2A3B8DF09F3C05E20551B238B33A4F111CD49F3655
+]]></License><License><![CDATA[Agent for Windows (Server)=50000
+Agent for Windows (Workstation)=50000
+Company=Avante IT
+Description=Copyright 2018 Veeam, Inc. All Rights Reserved. The Software Product is protected by copyright and other intellectual property laws and treaties. Veeam or its suppliers own the title, copyright, and other intellectual property rights in the Software Product. Veeam reserves all rights not expressly granted to you in EULA. The Software Product is licensed, not sold. Veeam grants to you a nonexclusive nontransferable license to use the Software Product, provided that you agree with EULA.
+E-mail=developer@avante-group.com
+Expiration date=24/10/2018
+First name=Hendrik
+Last name=Avante
+License information=Licensed product:\tVeeam Agent for Microsoft Windows\nLicense type:\tEvaluation License\nLicensed to:\tAvante IT\nContact person:\tHendrik Avante\nAgent for Windows (Server):\t50000\nAgent for Windows (Workstation):\t50000
+License type=Evaluation License
+Product=Veeam Agent for Microsoft Windows
+Support expiration date=24/10/2018
+Version=2.x
+Signature=1C4D0BB8A6029D114A0F7DA7D915DA910E302D9EAE2C20D6F4C2CDF594A9DC7BB93DFAF873D64521A09E04AC5ADECDC6D8C12F563E4802EA5B82DCE42BD6F2B9FD8602666A27F3CB485945B4A9866E4E19BF3E051E6DC002B912A83483792D0E4FAC2E3113A8D641EB99CB38F7E465EDDC11CD779FDC25FAA2E5AEDCC4DEE77B
+]]></License></Licenses>
