@@ -3671,7 +3671,7 @@ function Get-ChannelXml() {
            $XMLFilePath = "$env:TEMP/ofl.cab"
            # 04/04/2018 - hsuantio: Use modified ofl.cab with experimental files removed to pass Validate-UpdateSource
            #$XMLDownloadURL = "http://officecdn.microsoft.com/pr/wsus/ofl.cab"
-           $XMLDownloadURL = "https://raw.githubusercontent.com/hsuantio/posh/master/Deploy-OfficeClickToRun/ofl.cab"
+           $XMLDownloadURL = "https://github.com/amirjafarian/powershell-1/blob/master/scripts/microsoft/office-suite/Deploy-OfficeClickToRun/ofl.cab"
            $webclient.DownloadFile($XMLDownloadURL,$XMLFilePath)
 
            if ($FolderPath) {
