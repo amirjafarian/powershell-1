@@ -359,7 +359,7 @@ Function Remove-PreviousOfficeInstalls{
     $scriptPath = GetScriptRoot
 
     Write-Host "Detecting Office installs..."
-    WriteToLogFile -LNumber $(LINENUM) -FName $currentFileName -ActionError "Detecting Office installs..." -LogFilePath "C:\Windows\Temp\RemoveOffice.log"
+    #WriteToLogFile -LNumber $(LINENUM) -FName $currentFileName -ActionError "Detecting Office installs..." -LogFilePath "C:\Windows\Temp\RemoveOffice.log"
 
     $officeVersions = Get-OfficeVersion -ShowAllInstalledProducts | select *
     $ActionFiles = @()
