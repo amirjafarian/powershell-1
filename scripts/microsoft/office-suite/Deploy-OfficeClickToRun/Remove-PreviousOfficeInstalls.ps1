@@ -1,4 +1,4 @@
-﻿[CmdletBinding(SupportsShouldProcess=$true)]
+[CmdletBinding(SupportsShouldProcess=$true)]
 param(
 [Parameter(ValueFromPipelineByPropertyName=$true)]
 [bool]$RemoveClickToRunVersions = $true,
@@ -359,7 +359,7 @@ Function Remove-PreviousOfficeInstalls{
     $scriptPath = GetScriptRoot
 
     Write-Host "Detecting Office installs..."
-    WriteToLogFile -LNumber $(LINENUM) -FName $currentFileName -ActionError "Detecting Office installs..." -LogFilePath $LogFilePath
+    WriteToLogFile -LNumber $(LINENUM) -FName $currentFileName -ActionError "Detecting Office installs..." -LogFilePath "C:\Windows\Temp\RemoveOffice.log"
 
     $officeVersions = Get-OfficeVersion -ShowAllInstalledProducts | select *
     $ActionFiles = @()
@@ -368,7 +368,7 @@ Function Remove-PreviousOfficeInstalls{
     if (!( $officeVersions)) {
         if(!($ProductsToRemove -contains "Lync")){
             Write-Host "Microsoft Office is not installed"
-            WriteToLogFile -LNumber $(LINENUM) -FName $currentFileName -ActionError "Microsoft Office is not installed" -LogFilePath $LogFilePath
+            WriteToLogFile -LNumber $(LINENUM) -FName $currentFileName -ActionError "Microsoft Office is not installed" -LogFilePath "C:\Windows\Temp\RemoveOffice.log"
             $removeOffice = $false
         }
     }
